@@ -4,7 +4,7 @@ import { ApolloProvider } from 'react-apollo';
 import client from './apolloClient';
 import Home from './Home';
 import Splash from './Splash';
-import Header from './components/Header/Header';
+import Drawers from './components/Drawers/Drawers';
 
 class App extends Component {
   state = {
@@ -22,12 +22,12 @@ class App extends Component {
 
     return (
       <ApolloProvider client={client}>
-        <Header />
+        <Drawers />
         <Router>
           <main>
             <Route exact={true} path={'/'} component={Home} />
           </main>
-        </Router>;
+        </Router>
       </ApolloProvider>
     );
   }

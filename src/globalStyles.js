@@ -1,5 +1,5 @@
-import { injectGlobal } from "styled-components";
-import reset from "styled-reset";
+import { injectGlobal } from 'styled-components';
+import reset from 'styled-reset';
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500');
   ${reset};
